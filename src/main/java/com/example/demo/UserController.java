@@ -26,4 +26,9 @@ public class UserController {
     public String getAll(){
         return userService.getAll().toString();
     }
+
+    @GetMapping("/test")
+    public String testEndpoint(){
+        return "Success";
+    }
 }
