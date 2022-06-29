@@ -13,7 +13,6 @@ services:
       retries: 10
   test:
     image: emilyyy0621/testrepository:test-image
-#    image: test-image
     pull_policy: always
     ports:
       - 8000:8080
