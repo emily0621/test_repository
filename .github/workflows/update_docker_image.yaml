@@ -22,8 +22,8 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Build
-        run: ./gradlew build
+#      - name: Build
+#        run: ./gradlew build
 
 #      - name: Login to DockerHub
 #        uses: docker/login-action@v2
@@ -31,8 +31,8 @@ jobs:
 #          username: emilyyy0621
 #          password: 93f963e6-8bc5-4bc4-888c-8a43b817098e
 
-      - name: Push to Docker Hub
-        uses: docker/build-push-action@v2
+#      - name: Push to Docker Hub
+#        uses: docker/build-push-action@v2
 #        with:
 #          push: true
 
