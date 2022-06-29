@@ -22,11 +22,8 @@ jobs:
       - name: Build
         run: ./gradlew build
 
-#      - name: Build image
-#        run: docker build -t test-image .
-
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           username: emilyyy0621
           password: 93f963e6-8bc5-4bc4-888c-8a43b817098e
