@@ -17,16 +17,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.7.1'
+    implementation 'mysql:mysql-connector-java:8.0.29'
 }
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "emily0621_test_repository"
-        property "sonar.organization", "emily0621"
+        property "sonar.projectKey", "Anastasiia-Rokytska_sports_hub_portal"
+        property "sonar.organization", "anastasiia-rokytska"
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
 
-tasks.named('test') {
-    useJUnitPlatform()
-}
+//tasks.named('test') {
+//    useJUnitPlatform()
+//}
