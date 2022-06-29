@@ -22,8 +22,8 @@ jobs:
       - name: Build
         run: ./gradlew build
 
-      - name: Build image
-        run: docker build -t test-image .
+#      - name: Build image
+#        run: docker build -t test-image .
 
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
