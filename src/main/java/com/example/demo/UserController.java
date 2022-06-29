@@ -29,6 +29,6 @@ public class UserController {
 
     @GetMapping("/test")
     public String testEndpoint(){
-        return "Successfully updated vvvvvvvvvvv";
+        return "Successfully updated";
     }
 }
