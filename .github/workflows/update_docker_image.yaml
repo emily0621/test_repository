@@ -33,6 +33,9 @@ jobs:
           username: emilyyy0621
           password: 93f963e6-8bc5-4bc4-888c-8a43b817098e
 
+      - name: Create tag
+        run: docker tag test-image emilyyy0621/testrepository:test-image
+
       - name: Push image on repository
         run: docker push emilyyy0621/testrepository:test-image
 
