@@ -23,8 +23,8 @@ dependencies {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "Anastasiia-Rokytska_sports_hub_portal"
-        property "sonar.organization", "anastasiia-rokytska"
+        property "sonar.projectKey", "emily0621_test_repository"
+        property "sonar.organization", "emily0621"
         property "sonar.host.url", "https://sonarcloud.io"
     }
 }
