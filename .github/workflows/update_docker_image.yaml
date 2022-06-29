@@ -27,13 +27,22 @@ jobs:
       - name: Build image
         run: docker build -t test-image .
 
-      - name: Push to Docker Hub
-        uses: docker/build-push-action@v2
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
         with:
           username: emilyyy0621
           password: 93f963e6-8bc5-4bc4-888c-8a43b817098e
-          repository: emilyyy0621/testrepository
-          tags: test-image
+
+      - name: Push image on repository
+        run: docker push emilyyy0621/testrepository:test-image
+
+#      - name: Push to Docker Hub
+#        uses: docker/build-push-action@v1
+#        with:
+#          username: emilyyy0621
+#          password: 93f963e6-8bc5-4bc4-888c-8a43b817098e
+#          repository: emilyyy0621/testrepository
+#          tags: test-image
 
 #name: Docker
 #on:
