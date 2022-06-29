@@ -29,6 +29,6 @@ public class UserController {
 
     @GetMapping("/test")
     public String testEndpoint(){
-        return "Successfully updated in docker branch";
+        return "Success";
     }
 }
